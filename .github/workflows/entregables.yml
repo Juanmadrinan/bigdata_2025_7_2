@@ -12,7 +12,7 @@ jobs:
     - name: Paso 1 - Checkout en Repositorio
       uses: actions/checkout@v4
     - name: Paso 2 - Setup python
-      uses: actions/setup-python@vs
+      uses: actions/setup-python@v5
       with: 
         python-version: '3.9.2'
     - name: Paso 3 - Crear entorno virtual
