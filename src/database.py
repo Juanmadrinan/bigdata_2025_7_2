@@ -5,7 +5,7 @@ import pandas as pd
 
 class Database:
     def __init__(self):
-        self.db_name = "bigdata_2025_7_2/src/static/db/exchangerate.db"
+        self.db_name = "src/static/db/exchangerate.db"
         self.create_database()
 
     def create_database(self):
