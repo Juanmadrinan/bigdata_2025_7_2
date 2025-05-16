@@ -20,4 +20,4 @@ jobs:
     - name: Paso 4 - Activar entorno virtual
       run: ./venv/scripts/activate
     - name: Paso 5 - Ejecutar Script
-      run: python hello.py  
+      run: python src/main.py  
