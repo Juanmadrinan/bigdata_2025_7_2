@@ -5,7 +5,7 @@ import pandas as pd
 
 class Database:
     def __init__(self):
-        self.db_name = "src/static/db/exchangerate.db"
+        self.db_name = "bigdata_2025_7_2/src/static/db/exchangerate.db"
         self.create_database()
 
     def create_database(self):
@@ -16,4 +16,7 @@ class Database:
             print("Fallo, capturamos error en la creacion de la base de datos")
 
     def close_database(self):
-        self.conn.close()
+        if self.conn:
+            self.conn.close()
+        else:
+            print("No hay conexión para cerrar.") # O manejar de otra forma
