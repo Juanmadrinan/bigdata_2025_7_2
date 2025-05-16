@@ -19,5 +19,9 @@ jobs:
       run: python -m venv venv 
     - name: Paso 4 - Activar entorno virtual
       run: ./venv/scripts/activate
+    - name: Paso 5 - Actualizar el pip
+      run: pip install --upgrade pip
+    - name: Paso 6 - Instalar dependencias
+      run: pip install -e .
     - name: Paso 5 - Ejecutar Script
       run: python src/main.py  
