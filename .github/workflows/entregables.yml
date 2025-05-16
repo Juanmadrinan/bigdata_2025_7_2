@@ -23,5 +23,5 @@ jobs:
       run: pip install --upgrade pip
     - name: Paso 6 - Instalar dependencias
       run: pip install -e .
-    - name: Paso 5 - Ejecutar Script
+    - name: Paso 7 - Ejecutar Script
       run: python src/main.py  

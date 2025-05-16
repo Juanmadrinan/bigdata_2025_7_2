@@ -6,7 +6,6 @@ setup(
     author_email="jmadrinanpinzon@gmail.com",
     description="",
     install_requires=[
-        "json",
         "requests",
         "pandas"
     ]
